@@ -9,7 +9,7 @@ body{
     background:#f4f6f9;
 }
 
-/* Sidebar */
+
 .sidebar{
     width:260px;
     height:100vh;
@@ -80,7 +80,7 @@ body{
     background:#4f46e5;
 }
 
-/* Main Content */
+
 .main-content{
     margin-left:260px;
     width:calc(100% - 260px);
@@ -95,7 +95,7 @@ body{
     color:#555;
 }
 
-/* Dashboard */
+
 .dashboard{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -163,7 +163,7 @@ ul{
     margin-bottom:15px;
 }
 
-/* Responsive */
+
 @media(max-width:768px){
 
     .sidebar{
