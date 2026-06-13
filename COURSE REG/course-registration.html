@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Registration | LearnHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="page">
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      <img src="logo.jpg.jpeg" alt="LearnHub Logo">
+      <span class="logo-text">LearnHub</span>
+    </div>
+
+    <div class="profile-info">
+      <img src="martin.jpg" alt="Martin Ijowku" class="profile-img">
+      <p class="profile-name">Martin Ijowku</p>
+      <p class="profile-dept">Computer Science</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="index.html">Dashboard</a>
+      <a href="grades.html">Grades / Result</a>
+      <a href="course.html">My Courses</a>
+      <a href="course-registration.html" class="active">Course Registration</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <p class="page-label">Student Learning Portal</p>
+      <h1 class="page-title">Course Registration</h1>
+      <p class="page-subtitle">Select and register for courses available this semester.</p>
+    </div>
+
+    <div class="summary-strip">
+      <div class="summary-item">
+        <span class="summary-number">3</span>
+        <span class="summary-label">Registered</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-number">15</span>
+        <span class="summary-label">Credit Units</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-number">2025/2026</span>
+        <span class="summary-label">Session</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-number">Second</span>
+        <span class="summary-label">Semester</span>
+      </div>
+    </div>
+
+    <section class="section">
+
+      <h2 class="section-title">Available Courses</h2>
+      <p class="section-note">Tick the courses you want to register. Maximum credit load is 24 units.</p>
+
+      <table class="courses-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Course Code</th>
+            <th>Course Title</th>
+            <th>Credit Units</th>
+            <th>Lecturer</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="registered">
+            <td><input type="checkbox" checked></td>
+            <td>CSC 311</td>
+            <td>Data Structures &amp; Algorithms</td>
+            <td>3</td>
+            <td>Dr. A. Eze</td>
+            <td><span class="badge registered-badge">Registered</span></td>
+          </tr>
+          <tr class="registered">
+            <td><input type="checkbox" checked></td>
+            <td>CSC 323</td>
+            <td>Operating Systems</td>
+            <td>3</td>
+            <td>Prof. B. Okafor</td>
+            <td><span class="badge registered-badge">Registered</span></td>
+          </tr>
+          <tr class="registered">
+            <td><input type="checkbox" checked></td>
+            <td>CSC 315</td>
+            <td>Computer Networks</td>
+            <td>3</td>
+            <td>Dr. C. Ibrahim</td>
+            <td><span class="badge registered-badge">Registered</span></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>CSC 331</td>
+            <td>Software Engineering</td>
+            <td>3</td>
+            <td>Dr. F. Nwosu</td>
+            <td><span class="badge open-badge">Open</span></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>CSC 341</td>
+            <td>Artificial Intelligence</td>
+            <td>3</td>
+            <td>Dr. H. Sule</td>
+            <td><span class="badge open-badge">Open</span></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>MTH 312</td>
+            <td>Numerical Methods</td>
+            <td>3</td>
+            <td>Prof. G. Adamu</td>
+            <td><span class="badge open-badge">Open</span></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>GST 301</td>
+            <td>Entrepreneurship Studies</td>
+            <td>2</td>
+            <td>Mr. L. Bello</td>
+            <td><span class="badge open-badge">Open</span></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" disabled></td>
+            <td>CSC 345</td>
+            <td>Mobile App Development</td>
+            <td>3</td>
+            <td>Prof. K. Lawal</td>
+            <td><span class="badge closed-badge">Closed</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="table-actions">
+        <p>Selected credit units: <strong>15</strong> / 24</p>
+        <div class="action-buttons">
+          <button type="button" class="btn-secondary">Clear Selection</button>
+          <button type="button" class="btn-primary">Submit Registration</button>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <h2 class="section-title">Registered Courses</h2>
+
+      <table class="courses-table small-table">
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Title</th>
+            <th>Units</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CSC 311</td>
+            <td>Data Structures &amp; Algorithms</td>
+            <td>3</td>
+            <td><button class="btn-drop">Drop</button></td>
+          </tr>
+          <tr>
+            <td>CSC 323</td>
+            <td>Operating Systems</td>
+            <td>3</td>
+            <td><button class="btn-drop">Drop</button></td>
+          </tr>
+          <tr>
+            <td>CSC 315</td>
+            <td>Computer Networks</td>
+            <td>3</td>
+            <td><button class="btn-drop">Drop</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="footer-note">These results reflect your current registration for this semester. Contact your department if you experience any issues.</p>
+
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>
