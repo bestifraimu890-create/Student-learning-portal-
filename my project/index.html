@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal - My Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="download (1).jfif" alt="School Logo" class="portal-logo">
+            <h2>EduPortal</h2>
+        </div>
+        
+        <div class="profile">
+            <img src="download.jfif" alt="Student Profile Picture" class="portal-profile">
+            <h3>John Doe</h3>
+            <p>ID: 2026091</p>
+        </div>
+        
+        <ul class="menu">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="courses.html" class="active-link">My Courses</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>My Enrolled Courses</h1>
+        <p>Click on any course to view your materials and progress.</p>
+
+        <div class="courses-container">
+            
+            <div class="course-card">
+                <span class="badge">CS-301</span>
+                <h3>Advanced Web Development</h3>
+                <p>Instructor: Dr. Alex Smith</p>
+                <p>Progress: 75%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+                <a href="web-dev.html" class="course-btn">Go to Class</a>
+            </div>
+
+            <div class="course-card">
+                <span class="badge">MTH-202</span>
+                <h3>Linear Algebra</h3>
+                <p>Instructor: Prof. Sarah Connor</p>
+                <p>Progress: 40%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
+                <a href="algebra.html" class="course-btn">Go to Class</a>
+            </div>
+
+            <div class="course-card">
+                <span class="badge">ENG-105</span>
+                <h3>Technical Writing</h3>
+                <p>Instructor: Jane Doe</p>
+                <p>Progress: 90%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+                <a href="writing.html" class="course-btn">Go to Class</a>
+            </div>
+
+        </div>
+
+        <div class="table-card">
+            <h3>Upcoming Assignments</h3>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Assignment Name</th>
+                    <th>Due Date</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>CS-301</td>
+                    <td>CSS Layout Project</td>
+                    <td>June 18, 2026</td>
+                    <td><a href="submit.html">Submit Now</a></td>
+                </tr>
+                <tr>
+                    <td>MTH-202</td>
+                    <td>Midterm Homework</td>
+                    <td>June 22, 2026</td>
+                    <td><a href="view.html">View Details</a></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
